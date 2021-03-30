@@ -12,7 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.0
-  dio: ^4.0.0-beta7
+  dio:
+    git:
+      url: https://github.com/ARIFCSE10/dio
+      path: dio
+      ref: "4.0"
   flutter_local_notifications: ^5.0.0-nullsafety.1
   rxdart: ^0.26.0
 

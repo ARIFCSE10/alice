@@ -60,8 +60,9 @@ class AliceCore {
     }
     if (showInspectorOnShake) {
       _shakeDetector = ShakeDetector.autoStart(
-        onPhoneShake: () => navigateToCallListScreen() as Null,
-        shakeThresholdGravity: 5,
+        onPhoneShake: () {
+          navigateToCallListScreen();
+        },
       );
     }
     _brightness = darkTheme ? Brightness.dark : Brightness.light;
